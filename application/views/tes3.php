@@ -45,7 +45,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      </div>
     </div>
     <div class="shadow clip_frame colelem" id="u265"><!-- image -->
-     <img class="block" id="u265_img" src="<?php echo base_url();?>assets/images/fondo%20ponentes.jpg" alt="" width="1200" height="860"/>
+     <img class="block" id="u265_img" src="<?php echo base_url();?>assets/images/fondoponentes.jpg" alt="" width="1200" height="860"/>
     </div>
     <div class="clearfix colelem" id="pu682"><!-- group -->
      <div class="shadow clip_frame grpelem" id="u682"><!-- image -->
