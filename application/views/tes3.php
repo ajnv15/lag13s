@@ -5,7 +5,7 @@
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
   <meta name="generator" content="2017.0.1.363"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript">
    // Update the 'nojs'/'js' class on the html node
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
@@ -13,7 +13,24 @@ document.documentElement.className = document.documentElement.className.replace(
 // Check that all required assets are uploaded and up-to-date
 if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musepolyfill.bgsize.js", "webpro.js", "jquery.watch.js", "require.js", "index.css"], "outOfDate":[]};
 </script>
-
+<script>
+    $(function() {
+    // This will select everything with the class smoothScroll
+    // This should prevent problems with carousel, scrollspy, etc...
+    $('.smoothScroll').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000); // The number here represents the speed of the scroll in milliseconds
+        return false;
+      }
+    }
+    });
+    });
+</script>
   <title>Inicio</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/site_global.css"/>
@@ -57,13 +74,13 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
    <div class="clip_frame" id="u442"><!-- image -->
     <img class="block" id="u442_img" src="<?php echo base_url();?>assets/images/barra%20menu.png" alt="" width="336" height="668"/>
    </div>
-   <a class="nonblock nontext anim_swing transition" id="u176" href="#patrocinadores"><!-- state-based BG images --><img id="u176_states" alt="PATROCINADORES" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
-   <a class="nonblock nontext MuseLinkActive" id="u155-4" href="<?php echo site_url();?>"><!-- rasterized frame --><img id="u155-4_img" alt="INICIO" width="105" height="22" src="<?php echo base_url();?>assets/images/u155-4-a.png"/></a>
+   <a class="smoothScroll" id="u176" href="#patrocinadores"><!-- state-based BG images --><img id="u176_states" alt="PATROCINADORES" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
+   <a class="smoothScroll" id="u155-4" href="#inicio"<!-- rasterized frame --><img id="u155-4_img" alt="INICIO" width="105" height="22" src="<?php echo base_url();?>assets/images/u155-4-a.png"/></a>
    <div class="clearfix grpelem" id="ppu165"><!-- column -->
-    <a class="nonblock nontext anim_swing transition pinned-colelem" id="u165" href="#conocenos"><!-- state-based BG images --><img id="u165_states" alt="CONÓCENOS" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
-    <a class="nonblock nontext anim_swing transition pinned-colelem" id="u170" href="#ponentes"><!-- state-based BG images --><img id="u170_states" alt="PONENTES" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
-    <a class="nonblock nontext anim_swing transition pinned-colelem" id="u173" href="#programa"><!-- state-based BG images --><img id="u173_states" alt="PROGRAMA" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
-    <a class="nonblock nontext anim_swing transition pinned-colelem" id="u179" href="#regristro"><!-- state-based BG images --><img id="u179_states" alt="REGISTRO" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
+    <a class="smoothScroll" id="u165" href="#conocenos"><!-- state-based BG images --><img id="u165_states" alt="CONÓCENOS" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
+    <a class="smoothScroll" id="u170" href="#ponentes"><!-- state-based BG images --><img id="u170_states" alt="PONENTES" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
+    <a class="smoothScroll" id="u173" href="#programa"><!-- state-based BG images --><img id="u173_states" alt="PROGRAMA" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
+    <a class="smoothScroll" id="u179" href="#regristro"><!-- state-based BG images --><img id="u179_states" alt="REGISTRO" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
    </div>
    <div class="clearfix grpelem" id="pu927"><!-- column -->
     <a class="nonblock nontext colelem" id="u927" href="<?php echo base_url();?>assets/https://www.facebook.com/"><!-- simple frame --></a>
@@ -72,7 +89,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     </div>
    </div>
    <div class="clearfix grpelem" id="pinicio"><!-- column -->
-    <a class="anchor_item colelem" id="inicio"></a>
+    <a class="smoothScroll" id="inicio"></a>
     <a class="anchor_item colelem" id="conocenos"></a>
    </div>
    <a class="nonblock nontext grpelem" id="u800" href="<?php echo base_url();?>assets/CONOCENOS"><!-- simple frame --></a>
@@ -162,7 +179,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
    <img class="preload" src="<?php echo base_url();?>assets/images/u762-ferr.png" alt=""/>
   </div>
   <!-- Other scripts -->
-  <script type="text/javascript">
+<!--  <script type="text/javascript">
    window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
 16);return 0},g=function(g){for(var f=document.getElementsByTagName("link"),h=0;h<f.length;h++)if("text/css"==f[h].type){var i=(f[h].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!i||!i[1]||!i[2])break;b[i[1]]=i[2]}f=document.createElement("div");f.className="version";f.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(f);for(h=0;h<Muse.assets.required.length;){var i=Muse.assets.required[h],l=i.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
 l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
@@ -176,9 +193,9 @@ Muse.Utils.initWidget('#widgetu746', ['#bp_infinity'], function(elem) { return n
 Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 }catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
-
+-->
 </script>
-  <!-- RequireJS script -->
-  <script src="<?php echo base_url();?>assets/scripts/require.js" type="text/javascript" ></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  <!-- RequireJS script -->
+
    </body>
 </html>
