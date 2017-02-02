@@ -15,6 +15,11 @@ document.documentElement.className = document.documentElement.className.replace(
 if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musepolyfill.bgsize.js", "webpro.js", "jquery.watch.js", "require.js", "index.css"], "outOfDate":[]};
 </script>
 <script>
+function nombre(){
+
+var nombre = $('#nombre').val();
+
+}
     $(function() {
     // This will select everything with the class smoothScroll
     // This should prevent problems with carousel, scrollspy, etc...
@@ -147,12 +152,11 @@ background-color: #691F38 !important;
     <img class="colelem" id="u719-4" alt="registro" src="<?php echo base_url();?>assets/images/u719-4.png" data-image-width="324"/><!-- rasterized frame -->
     <div class="colelem" id="u722"><!-- simple frame --></div>
     <form class="form-grp clearfix colelem" id="widgetu746" method="post" enctype="multipart/form-data" action="scripts/form-u746.php"><!-- none box -->
-     <div class="fld-grp clearfix grpelem" id="widgetu748" data-required="true"><!-- none box -->
+
       <label class="fld-label grpelem" id="u751" for="widgetu748_input"><!-- state-based BG images --></label>
-      <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u749-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu748_input" name="custom_U748" tabindex="1"/><label class="wrapped-input fld-prompt" id="widgetu748_prompt" for="widgetu748_input"><span class="actAsPara">Introducir nombre</span></label></span>
-     </div>
+      <!-- content --><input class="form-control col-md-6 col-lg-12 col-sm-12" type="email" spellcheck="false" id="widgetu748_input" name="nombre" placeholder ="Ingresa tu nombre" tabindex="1"/>
      <div class="fld-grp clearfix grpelem" id="widgetu754" data-required="true" data-type="email"><!-- none box -->
-      <label class="fld-label grpelem" id="u755" for="widgetu754_input"><!-- state-based BG images --></label>
+
       <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u756-4"><!-- content --><input class="wrapped-input" type="email" spellcheck="false" id="widgetu754_input" name="Email" tabindex="2"/><label class="wrapped-input fld-prompt" id="widgetu754_prompt" for="widgetu754_input"><span class="actAsPara">Introducir correo electr.</span></label></span>
      </div>
      <div class="clearfix grpelem" id="u758-4"><!-- content -->
