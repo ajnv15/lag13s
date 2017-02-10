@@ -96,9 +96,57 @@ background-color: #691F38 !important;
    <div class="clearfix grpelem" id="ppu165"><!-- column -->
     <a class="smoothScroll" id="u165" href="#conocenos"><!-- state-based BG images --><img id="u165_states" alt="CONÓCENOS" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
     <a class="smoothScroll" id="u170" href="#ponentes"><!-- state-based BG images --><img id="u170_states" alt="PONENTES" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
-    <a class="smoothScroll" id="u173" href="#programa"><!-- state-based BG images --><img id="u173_states" alt="PROGRAMA" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
+    <a class="smoothScroll" id="u173" href="#programa"><!-- sta1te-based BG images --><img id="u173_states" alt="PROGRAMA" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
     <a class="smoothScroll" id="u179" href="#regristro"><!-- state-based BG images --><img id="u179_states" alt="REGISTRO" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
    </div>
+
+
+   <!-- Modal -->
+   <div class="modal fade" id="myModal" role="dialog">
+     <div class="modal-dialog">
+
+       <!-- Modal content-->
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <h4 class="modal-title">Modal Header</h4>
+         </div>
+         <div class="modal-body">
+
+
+     <div class="row">
+         <div class="col-sm-6 col-md-4 col-md-offset-4">
+             <h1 class="text-center login-title">Iniciar Sesión</h1>
+             <div class="account-wall">
+                 <img class="profile-img" align="center" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                     alt="">
+                 <form class="form-signin">
+                 <input type="email" class="form-control" placeholder="Email" required autofocus>
+                 <input type="password" class="form-control" placeholder="Password" required>
+                 <button class="btn btn-lg btn-primary btn-block" type="submit">
+                     Sign in</button>
+
+                 </form>
+             </div>
+
+         </div>
+     </div>
+
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         </div>
+       </div>
+
+     </div>
+
+
+ </div>
+
+
+
+
    <div class="clearfix grpelem" id="pu927"><!-- column -->
     <a class="nonblock nontext colelem" id="u927" href="<?php echo base_url();?>assets/https://www.facebook.com/"><!-- simple frame --></a>
     <div class="clip_frame colelem" id="u495"><!-- image -->
