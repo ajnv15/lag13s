@@ -9,17 +9,17 @@ class lag extends CI_Model {
           $query2= $this->db->query($query);
 
           if ($query2) {
-            echo "exito";
+            return "Se ha registrado con exito";
 
           }
         else {
-          echo "fallo";
+          return "ha ocurrido un error, por favor intenta de nuevo";
         }
     }
   }
-/*public function insertarexterno($nombrext,$,$telcasa,$telofi,$telcel){
-  $query="insert into externo(Nombre,Apellido,TelefonoCasa,TelefonoOficina,TelefonoCelular,Direccion)
-  values ('$propietario','$apellido','$telcasa','$telofi','$telcel','$direc')";
+public function insertarexterno($nombre,$email,$pass){
+  $query="insert into usuarios_externos(nombre,email)
+  values ('$nombre','$email',$pass)";
   $query2= $this->db->query($query);
 
   if ($query2) {
@@ -30,6 +30,6 @@ else {
   echo "fallo";
 }
 }
-*/
+
 
 ?>
