@@ -48,11 +48,11 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
+$db['default']['hostname'] = 'lakshmi.hosting-mexico.net';
+$db['default']['username'] = 'semanaco@localhost';
 $db['default']['password'] = '';
-$db['default']['database'] = 'lag';
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['database'] = 'semanaco_lag';
+$db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
