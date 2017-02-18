@@ -31,7 +31,7 @@ class bot extends CI_Controller{
         case '/qr':
         //si existe en chat id en la base de datos debemos determina si se ha liberado el pago y enviar la imagen
         //si no existe o esta registrado no se envia la imagen.
-        $text="se ha enviado el codigo qr";
+        $text="Se ha enviado el codigo qr";
         break;
 
         default:
@@ -39,7 +39,7 @@ class bot extends CI_Controller{
           break;
       }
 
-    $url="https://api.telegram.org/bot".$bootToken."/sendmessage?chat_id=".$chatid."&text=".$text;
+    $url="https://api.telegram.org/bot".$bootToken."/sendmessage?chat_id=".$chatid."&text=".$text."&disable_notification=true";
     $message=file_get_contents($url);
 
   }
@@ -49,7 +49,7 @@ class bot extends CI_Controller{
     $bootToken="372621238:AAEFrCbMNpEE2mwBk2t8ClfHWYWPHWNjnvk";
     $chatid="28896927";
     $text="'newtwxt'";
-    $url="https://api.telegram.org/bot".$bootToken."/sendmessage?chat_id=".$chatid."&text=".$text;
+    $url="https://api.telegram.org/bot".$bootToken."/sendmessage?chat_id=".$chatid."&text=".$text."&disable_notification=false";
     $message=file_get_contents($url);
   }
 
@@ -59,7 +59,7 @@ class bot extends CI_Controller{
     $bootToken="372621238:AAEFrCbMNpEE2mwBk2t8ClfHWYWPHWNjnvk";
     $chatid="28896927";
     $photo= base_url()."assets/images/test5de5594eed543f2f055383129e07662a.png";
-    $url="http://api.telegram.org/bot".$bootToken."/sendphoto?chat_id=".$chatid."&photo=".$photo;
+    $url="http://api.telegram.org/bot".$bootToken."/sendphoto?chat_id=".$chatid."&photo=".$photo."&disable_notification=false";
     $message=file_get_contents($url);
 
   }
