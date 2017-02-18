@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class lag extends CI_Model {
 
-<<<<<<< HEAD
+
     public function insertarinterno($matricula,$nombre){
           $query="insert into internos (matricula,nombre)
           values ('$matricula','$nombre')";
@@ -85,6 +85,6 @@ else {
 }
 }
 
->>>>>>> release/version-1.0.0
+
 
 ?>
