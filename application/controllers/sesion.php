@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class sesion extends CI_Controller {
 
   public function index() {
-    //esta vacia la funcion
+  $this->load->view('headers');
   }
 
   public function generarCodigo()
