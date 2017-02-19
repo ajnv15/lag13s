@@ -10,12 +10,13 @@ class bot extends CI_Controller{
     $update = json_decode($content, true);
     $chatid = $update["message"]["chat"]["id"];
     $mensaje = $update["message"]["text"];
-    $mensaje=strtolower($mensaje);
-    if(strpos($mensaje,"cux"))
+    //$mensaje=strtolower($mensaje);
+    $cmd=$mensaje;
+    if(strpos($mensaje,"cx"))
       {
         $cmd="/codigo";
       }
-      $cmd=$mensaje;
+
 
       switch ($cmd) {
         case '/start':
@@ -25,7 +26,6 @@ class bot extends CI_Controller{
         $text="Aun no tenemos comandos disponibles, espera el lanzamiento oficial";
         break;
         case '/codigo':
-
           $text= "tu codigo se ha insertado con exito or tu codigo no se encuentra, inicia sesión en la pagina para ver tu codigo en la seccion de telegram";
           break;
         case '/qr':
@@ -59,7 +59,7 @@ class bot extends CI_Controller{
     $bootToken="372621238:AAEFrCbMNpEE2mwBk2t8ClfHWYWPHWNjnvk";
     $chatid="28896927";
     $photo= base_url()."assets/images/test5de5594eed543f2f055383129e07662a.png";
-    $url="http://api.telegram.org/bot".$bootToken."/sendphoto?chat_id=".$chatid."&photo=".$photo."&disable_notification=false";
+    $url="http://api.telegram.org/bot".$bootToken."/sendphoto?chat_id=".$chatid."&photo=".$photo."&disable_notification=true";
     $message=file_get_contents($url);
 
   }
