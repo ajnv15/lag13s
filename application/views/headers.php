@@ -11,7 +11,12 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<style>
+body{
+  background-color: #691f38 !important;
+}
 
+</style>
 
 <body>
   <nav class="navbar navbar-default">
@@ -24,20 +29,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Inicio</a>
+      <!--<a class="navbar-brand" href="#"><img src="<?php echo base_url().'assets/images/13_sesion.png';?>" alt=""></a>-->
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-          <li class="active"><a href="#login" data-toggle="tab">Iniciar Sesión</a></li>
-        <li><a href="#home" data-toggle="tab">Home</a></li>
-        <li><a href="#formato" data-toggle="tab">Formulario <span class="sr-only">(current)</span></a></li>
-        <li><a href="#busqueda" data-toggle="tab">Busqueda</a></li>
-        <li><a href="#contacto" data-toggle="tab">Contacto</a></li>
-        <li><a href="#regequipo" data-toggle="tab">Agregar equipo</a></li>
-        <li><a href="#parsley" data-toggle="tab">Parsley</a></li>
-        <li><a href="#ubicaciones" data-toggle="tab" onmouseover="mapa();">Ubicación de propiedades</a></li>
+        <li><a href="#pagos" data-toggle="tab">Pagos</a></li>
+        <!--<li><a href="#asientos" data-toggle="tab">Asientos <span class="sr-only">(current)</span></a></li>-->
+        <li><a href="#qr" data-toggle="tab">Código QR</a></li>
+        <li><a href="#telegram" data-toggle="tab">Telegram</a></li>
       </ul>
 
       <!--<ul class="nav navbar-nav navbar-right">
@@ -46,3 +47,4 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
   </nav>
+  <div class="tab-content">
