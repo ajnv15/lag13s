@@ -30,14 +30,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-          <li class="active"><a href="#login" data-toggle="tab">Iniciar Sesión</a></li>
+        <li class="active"><a href="#login" data-toggle="tab">Iniciar Sesión</a></li>
         <li><a href="#home" data-toggle="tab">Home</a></li>
-        <li><a href="#formato" data-toggle="tab">Formulario <span class="sr-only">(current)</span></a></li>
-        <li><a href="#busqueda" data-toggle="tab">Busqueda</a></li>
-        <li><a href="#contacto" data-toggle="tab">Contacto</a></li>
-        <li><a href="#regequipo" data-toggle="tab">Agregar equipo</a></li>
-        <li><a href="#parsley" data-toggle="tab">Parsley</a></li>
-        <li><a href="#ubicaciones" data-toggle="tab" onmouseover="mapa();">Ubicación de propiedades</a></li>
+        <li><a href="#asientos" data-toggle="tab">Asientos <span class="sr-only">(current)</span></a></li>
+        <li><a href="#busqueda" data-toggle="tab">Código QR</a></li>
       </ul>
 
       <!--<ul class="nav navbar-nav navbar-right">
