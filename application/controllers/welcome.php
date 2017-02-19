@@ -15,6 +15,7 @@ class Welcome extends CI_Controller {
 		$nombre=$this->input->post("nombre");
 		$pass=$this->input->post("pass");
 		$this->load->model('lag');
+		$pass=md5($pass);
 		$this->lag->insertar($matricula,$nombre,$pass);
 		redirect("welcome/index");
 	}
@@ -24,6 +25,7 @@ class Welcome extends CI_Controller {
 		$email=$this->input->post("email");
 		$pass=$this->input->post("pass");
 		$this->load->model('lag');
+		$pass=md5($pass);
 		$this->lag->insertar($nombre,$email,$pass);
 		redirect("welcome/index");
 	}
@@ -33,11 +35,12 @@ public function iniciarSesion()
 
 	$usuario=$this->input->post("user");
 	$pass=$this->input->post("pass");
+	$pass=md5($pass);
 	$interno=$this->load->model->lag->iniciointerno($usuario,$pass);
 	if($interno){
 		  $this->load->library("session");
 			$this->session->set_userdata('usuario',$interno->nombre);
-			
+
 	}
 	//inicio de sesion y redireccion a nuevo controlador
 	//hacer una funcion que seleccione user y pass de bd para usuarios internos
