@@ -31,11 +31,11 @@ class sesion extends CI_Controller {
 
       //processing form input
       //remember to sanitize user input in real-life solution !!!
-      $errorCorrectionLevel = 'H';
+      $errorCorrectionLevel = 'M';
       // if (isset($_REQUEST['level']) && in_array($_REQUEST['level'], array('L','M','Q','H')))
       //     $errorCorrectionLevel = $_REQUEST['level'];
 
-      $matrixPointSize = 8;
+      $matrixPointSize = 6;
       // if (isset($_REQUEST['size']))
       //     $matrixPointSize = min(max((int)$_REQUEST['size'], 1), 10);
 
@@ -47,14 +47,14 @@ class sesion extends CI_Controller {
       //         die('data cannot be empty! <a href="?">back</a>');
 
           // user data
-          $filename = $PNG_TEMP_DIR.'test'.md5($nombre.'|'.$errorCorrectionLevel.'|'.$matrixPointSize).'.png';
+          $filename = $PNG_TEMP_DIR.'lag'.md5($nombre.'|'.$errorCorrectionLevel.'|'.$matrixPointSize).'.png';
           QRcode::png("192.168.1.7/".$nombre, $filename, $errorCorrectionLevel, $matrixPointSize, 2);
 
 
 
       //display generated file
 
-      echo '<img src="'.base_url()."assets/QR/temp/test".md5($nombre.'|'.$errorCorrectionLevel.'|'.$matrixPointSize).'.png" /><hr/>';
+      echo '<img src="'.base_url()."assets/QR/temp/lag".md5($nombre.'|'.$errorCorrectionLevel.'|'.$matrixPointSize).'.png" /><hr/>';
 
       //config form
       //QRtools::timeBenchmark();
