@@ -3,7 +3,14 @@
 
 class bot extends CI_Controller{
 
+  public function msnEnvio()
+  {
+    $this->load->view('headwocont');
+    $this->load->view('msnTele');
+    $this->load->view('footer');
 
+
+  }
   public function receiveMessage(){
     $bootToken="372621238:AAEFrCbMNpEE2mwBk2t8ClfHWYWPHWNjnvk";
     $content = file_get_contents("php://input");
@@ -15,7 +22,7 @@ class bot extends CI_Controller{
     $this->load->model('botChat');
     if(!$this->botChat->verifChatid($chatid))
       {
-        
+
         $this->botChat->insertarChatid($chatid);
       }
 
