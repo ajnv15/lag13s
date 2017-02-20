@@ -123,7 +123,7 @@ public function receiveMessage2(){
 
     switch ($cmd) {
       case '/start':
-        $text="hola";
+        $text="Bienvenido, ya formas parte de la décimo tercera semana de administración y gestión, tenemos muchas sorpresas para ti. Esperelas!";
         break;
       case '/help':
       $text="Aun no tenemos comandos disponibles, espera el lanzamiento oficial";
