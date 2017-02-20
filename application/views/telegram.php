@@ -40,39 +40,117 @@
               </div>
               <div class="modal-body">
 
-                <div class="row">
+                  <div class="row"><!--Instrucciones de instalación de telegram-->
                   <div class="container">
 
 
                   <div class="col-lg-4">
-                    <img src="<?php echo base_url()."/assets/images/bot_telegram.png";?>" alt="">
+                    <img src="<?php echo base_url()."/assets/images/playstore.jpg";?>" alt="">
                     <div class="overlay">
-                      <div class="text">Al hacer click sobre nuestro bot se abrirá la ventana de chat</div>
+                      <div class="text">Descargar Telegram</div>
                   </div>
                   </div>
                   <div class="col-lg-3">
-                    <strong>Busca el Bot con el nombre "semana13LAGBot"</strong>
+                    <strong>Abre Play Store, busca la aplicación Telegram en el buscador y haz clic en Instalar: </strong>
                   </div>
                   </div>
-                </div><!--row-->
-
-
+                </div><!--tercer row-->
 
                 <div class="row">
                   <div class="container">
 
-
                   <div class="col-lg-4">
-                    <img src="<?php echo base_url()."/assets/images/telegram_iniciar.png";?>" alt="">
+                    <img src="<?php echo base_url()."/assets/images/empezar.jpg";?>" alt="">
                     <div class="overlay">
-                      <div class="text">Hello World</div>
+                      <div class="text">Instalación de Telegram</div>
                   </div>
                   </div>
                   <div class="col-lg-3">
-                    <strong>Selecciona el bot y da click en la parte inferior en Iniciar</strong>
+                    <strong>Luego de la instalación, pulsa el botón Empieza a conversar: </strong>
                   </div>
                   </div>
-                </div><!--segundo row-->
+                </div><!--cuarto row-->
+
+              <div class="row">
+                <div class="container">
+
+                <div class="col-lg-4">
+                  <img src="<?php echo base_url()."/assets/images/ingresarnum.jpg";?>" alt="">
+                  <div class="overlay">
+                    <div class="text">Ingresa tu teléfono</div>
+                </div>
+                </div>
+                <div class="col-lg-3">
+                  <strong>En la ventana que aparece, ingresa tu número de teléfono: </strong>
+                </div>
+                </div>
+              </div><!--quinto row-->
+
+            <div class="row">
+              <div class="container">
+
+              <div class="col-lg-4">
+                <img src="<?php echo base_url()."/assets/images/codigo.jpg";?>" alt="">
+                <div class="overlay">
+                  <div class="text">Ingresa tu código de verificación</div>
+              </div>
+              </div>
+              <div class="col-lg-3">
+                <strong>Ingresa el código enviado a tu teléfono:  </strong>
+              </div>
+              </div>
+            </div><!--sexto row-->
+
+
+          <div class="row">
+            <div class="container">
+            <div class="col-lg-4">
+              <img src="<?php echo base_url()."/assets/images/nombre.jpg";?>" alt="">
+              <div class="overlay">
+                <div class="text">Ingresa tu nombre</div>
+            </div>
+            </div>
+            <div class="col-lg-3">
+              <strong>Ingresa tu nombre y si deseas también tu apellido:  </strong>
+            </div>
+            </div>
+          </div><!--septimo row-->
+
+          <div class="row">
+            <div class="container">
+
+
+            <div class="col-lg-4">
+              <img src="<?php echo base_url()."/assets/images/bot.jpg";?>" alt="">
+              <div class="overlay">
+                <div class="text">Al hacer click sobre nuestro bot se abrirá la ventana de chat</div>
+            </div>
+            </div>
+            <div class="col-lg-3">
+              <strong>Busca el Bot con el nombre "semana13LAGBot"</strong>
+            </div>
+            </div>
+          </div><!--row-->
+
+
+
+          <div class="row">
+            <div class="container">
+
+
+            <div class="col-lg-4">
+              <img src="<?php echo base_url()."/assets/images/ini.jpg";?>" alt="">
+              <div class="overlay">
+                <div class="text">Hello World</div>
+            </div>
+            </div>
+            <div class="col-lg-3">
+              <strong>Selecciona el bot y da click en la parte inferior en Iniciar</strong>
+            </div>
+            </div>
+          </div><!--segundo row-->
+
+
 
 
               </div>
