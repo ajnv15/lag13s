@@ -71,6 +71,7 @@ public function iniciarSesion()
 	if($interno){
 		  $this->load->library("session");
 			$this->session->set_userdata('usuario',$interno->nombre);
+			$this->session->set_userdata("tipousuario","interno");
 
 	}
 	//inicio de sesion y redireccion a nuevo controlador
