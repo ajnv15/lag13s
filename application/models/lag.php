@@ -14,9 +14,9 @@ class lag extends CI_Model {
       return false;
     }
   }
-  public function checarexterno()
+  public function checarexterno($email)
   {
-    $query="select * from  usuarios_externos where email='$usuario'";
+    $query="select * from  usuarios_externos where email='$email'";
     $query2= $this->db->query($query);
     if($query2->num_rows>0){
       return true;
@@ -27,7 +27,7 @@ class lag extends CI_Model {
   }
 
     public function insertarinterno($matricula,$nombre,$pass){
-          $query="insert into internos (matricula,nombre,pass)
+          $query="insert into internos (matricula,nombre,password)
           values ('$matricula','$nombre','$pass')";
           $query2= $this->db->query($query);
 
@@ -58,7 +58,7 @@ class lag extends CI_Model {
 
 
 public function insertarexterno($nombre,$email,$pass,$code){
-  $query="insert into usuarios_externos(nombre,email,pass,unique_code)
+  $query="insert into usuarios_externos(nombre,email,password,unique_code)
   values ('$nombre','$email','$pass','$code')";
   $query2= $this->db->query($query);
 

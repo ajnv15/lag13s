@@ -46,19 +46,19 @@ class Welcome extends CI_Controller {
 		$pass=$this->input->post("pass");
 		$this->load->model('lag');
 		$pass=md5($pass);
-		if(!$this->lag->checarexterno($matricula)){
+		if(!$this->lag->checarexterno($email)){
 				$fd=uniqid("ds");
 				$uniquecode="acx".substr($fd,8,14);
-				if($this->lag->verifUniquecodeExt($uniquecode))
+				if(!$this->lag->verifUniquecodeExt($uniquecode))
 				{
 					$this->lag->insertarexterno($nombre,$email,$pass,$uniquecode);
 				}else{
-						$uniquecode=$unique_code.substr(uniqid(),8,10);
-						$this->lag->insertar($nombre,$email,$pass,$uniquecode);
+						$uniquecode=$uniquecode.substr(uniqid(),8,10);
+						$this->lag->insertarexterno($nombre,$email,$pass,$uniquecode);
 
 					}
 				}
-		redirect("welcome/index");
+		//redirect("welcome/index");
 	}
 
 public function iniciarSesion()
@@ -71,6 +71,7 @@ public function iniciarSesion()
 	if($interno){
 		  $this->load->library("session");
 			$this->session->set_userdata('usuario',$interno->nombre);
+			$this->session->set_userdata("tipousuario","interno");
 
 	}
 	//inicio de sesion y redireccion a nuevo controlador
@@ -91,6 +92,11 @@ else {
 
 }
 
+public function registros(){
+			$this->load->view('registroexterno');
+
+
+		}
 
 
 
