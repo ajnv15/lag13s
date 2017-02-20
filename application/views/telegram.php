@@ -14,7 +14,7 @@
 }
 
 .container:hover .overlay {
-  width: 100%;
+  width: 70%;
 }
 
 .text {
@@ -45,7 +45,7 @@
 
 
                   <div class="col-lg-4">
-                    <img src="<?php echo base_url()."/assets/images/playstore.jpg";?>" alt="">
+                    <img class="image-responsive" src="<?php echo base_url()."/assets/images/playstore.jpg";?>" alt="">
                     <div class="overlay">
                       <div class="text">Descargar Telegram</div>
                   </div>
@@ -60,7 +60,7 @@
                   <div class="container">
 
                   <div class="col-lg-4">
-                    <img src="<?php echo base_url()."/assets/images/empezar.jpg";?>" alt="">
+                    <img class="image-responsive" src="<?php echo base_url()."/assets/images/empezar.jpg";?>" alt="">
                     <div class="overlay">
                       <div class="text">Instalación de Telegram</div>
                   </div>
@@ -75,7 +75,7 @@
                 <div class="container">
 
                 <div class="col-lg-4">
-                  <img src="<?php echo base_url()."/assets/images/ingresarnum.jpg";?>" alt="">
+                  <img class="image-responsive" src="<?php echo base_url()."/assets/images/ingresarnum.jpg";?>" alt="">
                   <div class="overlay">
                     <div class="text">Ingresa tu teléfono</div>
                 </div>
@@ -90,7 +90,7 @@
               <div class="container">
 
               <div class="col-lg-4">
-                <img src="<?php echo base_url()."/assets/images/codigo.jpg";?>" alt="">
+                <img class="image-responsive" src="<?php echo base_url()."/assets/images/codigo.jpg";?>" alt="">
                 <div class="overlay">
                   <div class="text">Ingresa tu código de verificación</div>
               </div>
@@ -105,7 +105,7 @@
           <div class="row">
             <div class="container">
             <div class="col-lg-4">
-              <img src="<?php echo base_url()."/assets/images/nombre.jpg";?>" alt="">
+              <img class="image-responsive" src="<?php echo base_url()."/assets/images/nombre.jpg";?>" alt="">
               <div class="overlay">
                 <div class="text">Ingresa tu nombre</div>
             </div>
@@ -121,7 +121,7 @@
 
 
             <div class="col-lg-4">
-              <img src="<?php echo base_url()."/assets/images/bot.jpg";?>" alt="">
+              <img class="image-responsive" src="<?php echo base_url()."/assets/images/bot.jpg";?>" alt="">
               <div class="overlay">
                 <div class="text">Al hacer click sobre nuestro bot se abrirá la ventana de chat</div>
             </div>
@@ -139,7 +139,7 @@
 
 
             <div class="col-lg-4">
-              <img src="<?php echo base_url()."/assets/images/ini.jpg";?>" alt="">
+              <img class="image-responsive" src="<?php echo base_url()."/assets/images/ini.jpg";?>" alt="">
               <div class="overlay">
                 <div class="text">Hello World</div>
             </div>
@@ -150,6 +150,21 @@
             </div>
           </div><!--segundo row-->
 
+          <div class="row">
+                            <div class="container">
+
+
+                            <div class="col-lg-5 col-sm-6 ">
+                              <h2 class="azul">$variable</h2>
+                              <div class="overlay">
+                                <div class="text">Después de enviar este codigo recibiras un mensaje de confirmación</div>
+                            </div>
+                            </div>
+                            <div class="col-lg-3 ">
+                              <strong>Envía este código y recibiras un mensaje</strong>
+                            </div>
+                            </div>
+                          </div>
 
 
 
