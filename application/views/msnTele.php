@@ -12,7 +12,7 @@
 
               <div class="form-group">
                 <label for="mensaje"></label>
-                <textarea name="mensaje" rows="8" cols="80" id="mensaje" placeholder="Bienvenido, ya formas parte de la décimo tercera semana de administración y gestión, tenemos muchas sorpresas para ti. Esperelas!"></textarea>
+                <textarea name="mensaje" rows="8" cols="80" id="mensaje" placeholder="Ingresa el mensaje que se enviara a todos los usuarios"></textarea>
 
               </div>
             </form>
