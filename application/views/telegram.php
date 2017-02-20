@@ -69,7 +69,7 @@
                   </div>
                   </div>
                   <div class="col-lg-3">
-                    <strong>Selecciona el bot y da click en la parte inferior en iniciar</strong>
+                    <strong>Selecciona el bot y da click en la parte inferior en Iniciar</strong>
                   </div>
                   </div>
                 </div><!--segundo row-->
