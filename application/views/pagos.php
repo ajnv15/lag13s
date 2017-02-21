@@ -64,10 +64,10 @@
                 <div class="row">
                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-5 col-xl-8 col-lg-offset-2
                   col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
-                  <h4 >Referencia</h4>
+                  <h4 >Número de cuenta </h4>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xl-6">
-                  <h4 class="azul">1266658</h4>
+                  <h4 class="azul">007447870455236983</h4>
                   </div>
               </div>
               <div class="row">
@@ -77,6 +77,16 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 azu2">
                 <h4>  $"variable"</h4>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-5 col-xl-8 col-lg-offset-2
+                  col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+                    <h4> Fechas de pago</h4>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 azu2">
+                  <h4>  20 de Febrero al 06 de Marzo</h4>
+                  </div>
                 </div>
             </div>
           </div>
