@@ -4,12 +4,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class sesion extends CI_Controller {
 
   public function index() {
+    $this->load->library('session');
+    $this->session->set_userdata('tipousuario','interno');
+    $this->session->set_userdata('usuario','100003');
+    $tipo=$this->session->userdata('tipousuario');
+    $usuario=$this->session->userdata('usuario');
+    $this->load->model('lag');
+    if($tipo=="interno"){
+      $data=$this->lag->getUserdataInterno($usuario);
+      $idusuarios_internos=$data[0]->idusuarios_internos;
+      //echo $idusuarios_internos;
+      $monto=$this->lag->getmontoIterno($idusuarios_internos);
+      //echo $monto[0]->cantidad;
+
+
+    }
+
+    $datos['monto']=$monto;
   $this->load->view('headers');
-  $this->load->view('pagos');
+  $this->load->view('pagos',$datos);
   $this->load->view('asientos');
   $this->load->view('qr');
   $this->load->view('telegram');
   $this->load->view('footer');
+  $this->load->library('session');
+
   }
 
   public function generarCodigo()

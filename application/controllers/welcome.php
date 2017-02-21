@@ -4,7 +4,7 @@ class Welcome extends CI_Controller {
 
 	public function index(){
 
-		$this->load->model('lag');
+		//$this->load->model('lag');
 		$this->load->view("tes3");
 
 

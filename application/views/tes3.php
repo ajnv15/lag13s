@@ -80,7 +80,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     <a class="smoothScroll" id="u165" href="#conocenos"><!-- state-based BG images --><img id="u165_states" alt="CONÓCENOS" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
     <a class="smoothScroll" id="u170" href="#ponentes"><!-- state-based BG images --><img id="u170_states" alt="PONENTES" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
     <a class="smoothScroll" id="u173" href="#programa"><!-- sta1te-based BG images --><img id="u173_states" alt="PROGRAMA" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
-    <a class="smoothScroll" id="u179" href="#regristro"><!-- state-based BG images --><img id="u179_states" alt="REGISTRO" src="<?php echo base_url();?>assets/images/blank.gif"/></a>
+    <!--<a class="smoothScroll" id="u179" href="#regristro"><!-- state-based BG images <img id="u179_states" alt="REGISTRO" src="<?php echo base_url();?>assets/images/blank.gif"/></a>-->
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
    </div>
 
@@ -180,30 +180,9 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      <img class="grpelem" id="u704-4" alt="Patrocinadores" src="<?php echo base_url();?>assets/images/u704-4.png" data-image-width="452"/><!-- rasterized frame -->
      <div class="grpelem" id="u707"><!-- simple frame --></div>
     </div>
-    <img class="colelem" id="u719-4" alt="registro" src="<?php echo base_url();?>assets/images/u719-4.png" data-image-width="324"/><!-- rasterized frame -->
+    <!--<img class="colelem" id="u719-4" alt="registro" src="<?php echo base_url();?>assets/images/u719-4.png" data-image-width="324"/><!-- rasterized frame -->
     <div class="colelem" id="u722"><!-- simple frame --></div>
-    <form class="form-grp clearfix colelem" id="widgetu746" method="post" enctype="multipart/form-data" action="scripts/form-u746.php"><!-- none box -->
-     <div class="fld-grp clearfix grpelem" id="widgetu748" data-required="true"><!-- none box -->
-      <label class="fld-label grpelem" id="u751" for="widgetu748_input"><!-- state-based BG images --></label>
-      <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u749-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu748_input" name="custom_U748" tabindex="1"/><label class="wrapped-input fld-prompt" id="widgetu748_prompt" for="widgetu748_input"><span class="actAsPara">Introducir nombre</span></label></span>
-     </div>
-     <div class="fld-grp clearfix grpelem" id="widgetu754" data-required="true" data-type="email"><!-- none box -->
-      <label class="fld-label grpelem" id="u755" for="widgetu754_input"><!-- state-based BG images --></label>
-      <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u756-4"><!-- content --><input class="wrapped-input" type="email" spellcheck="false" id="widgetu754_input" name="Email" tabindex="2"/><label class="wrapped-input fld-prompt" id="widgetu754_prompt" for="widgetu754_input"><span class="actAsPara">Introducir correo electr.</span></label></span>
-     </div>
-     <div class="clearfix grpelem" id="u758-4"><!-- content -->
-      <p>Enviando formulario...</p>
-     </div>
-     <div class="clearfix grpelem" id="u753-4"><!-- content -->
-      <p>El servidor ha detectado un error.</p>
-     </div>
-     <img class="grpelem" id="u752" alt="¡lISTO!" src="<?php echo base_url();?>assets/images/blank.gif"/><!-- state-based BG images -->
-     <button class="submit-btn NoWrap grpelem" id="u747" alt="Enviar" src="<?php echo base_url();?>assets/images/blank.gif" type="submit" value="" tabindex="4"><!-- state-based BG images --></button>
-     <div class="fld-grp clearfix grpelem" id="widgetu759" data-required="false"><!-- none box -->
-      <label class="fld-label grpelem" id="u762" for="widgetu759_input"><!-- state-based BG images --></label>
-      <span class="fld-textarea actAsDiv clearfix grpelem" id="u761-4"><!-- content --><textarea class="wrapped-input" id="widgetu759_input" name="custom_U759" tabindex="3"></textarea><label class="wrapped-input fld-prompt" id="widgetu759_prompt" for="widgetu759_input"><span class="actAsPara">Escriba su mensaje</span></label></span>
-     </div>
-    </form>
+
    </div>
    <div class="verticalspacer" data-offset-top="4448" data-content-above-spacer="4447" data-content-below-spacer="133"></div>
   </div>

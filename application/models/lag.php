@@ -25,6 +25,12 @@ class lag extends CI_Model {
       return false;
     }
   }
+    public function getUserdataInterno($matricula){
+      $query="select * from usuarios_internos where matricula='$matricula'";
+      $query2= $this->db->query($query);
+        return $query2->result();
+
+    }
 
     public function insertarinterno($matricula,$pass,$uniquecode){
           $query="insert into usuarios_internos (matricula,password,unique_code)
@@ -100,6 +106,20 @@ else {
 
 }
 }
+
+public function getmontoIterno($id)
+{
+  $query="select sum(monto) as cantidad from pagos_internos where idusuarios_internos='$id'";
+  $query2= $this->db->query($query);
+
+  if ($query2){
+    return $query2->result();
+
+
+  }
+}
+
+
 }
 
 
