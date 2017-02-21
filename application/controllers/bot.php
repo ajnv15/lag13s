@@ -11,6 +11,20 @@ class bot extends CI_Controller{
 
 
   }
+    public function postmensajes()
+    {
+      $bootToken="372621238:AAEFrCbMNpEE2mwBk2t8ClfHWYWPHWNjnvk";
+      $mensaje=$this->input->post("mensaje");
+      $code=$this->input->post("code");
+      if($code=="mensajemasivo1"){
+          $this->load->model('botChat');
+          $chatid=$this->botChat->getchatsid();
+          foreach ($chatid as $chatid) {
+            $url="https://api.telegram.org/bot".$bootToken."/sendmessage?chat_id=".$chatid->chat_id."&text=".$mensaje."&disable_notification=false";
+            $message=file_get_contents($url);
+            }
+      }
+    }
   public function receiveMessage(){
     $bootToken="372621238:AAEFrCbMNpEE2mwBk2t8ClfHWYWPHWNjnvk";
     $content = file_get_contents("php://input");
@@ -37,7 +51,7 @@ class bot extends CI_Controller{
 
       switch ($cmd) {
         case '/start':
-          $text="Bienvenido al evento de semana de adminitración y gestión, espera el lanzamiento oficial!!!";
+          $text="Bienvenido, ya formas parte de la décimo tercera semana de administración y gestión, tenemos muchas sorpresas para ti. Esperelas!";
           break;
         case '/help':
         $text="Aun no tenemos comandos disponibles, espera el lanzamiento oficial";

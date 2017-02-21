@@ -3,9 +3,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class lag extends CI_Model {
 
-  public function checarInterno()
+  public function checarInterno($matricula)
   {
-    $query="select * from  usuarios_internos where matricula='$usuario'";
+    $query="select * from  usuarios_internos where matricula='$matricula'";
     $query2= $this->db->query($query);
     if($query2->num_rows>0){
       return true;
@@ -26,9 +26,9 @@ class lag extends CI_Model {
     }
   }
 
-    public function insertarinterno($matricula,$nombre,$pass){
-          $query="insert into internos (matricula,nombre,password)
-          values ('$matricula','$nombre','$pass')";
+    public function insertarinterno($matricula,$pass,$uniquecode){
+          $query="insert into usuarios_internos (matricula,password,unique_code)
+          values ('$matricula','$pass','$uniquecode')";
           $query2= $this->db->query($query);
 
           if ($query2) {

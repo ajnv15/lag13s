@@ -20,16 +20,19 @@ class Welcome extends CI_Controller {
 
 			if(!$this->lag->checarInterno($matricula)){
 				$uniquecode="acx".substr($fd,8,14);
-				if($this->lag->verifUniquecodeExt($uniquecode))
+				if(!$this->lag->verifUniquecodeExt($uniquecode))
 				{
-					$this->lag->insertarexterno($nombre,$email,$pass,$uniquecode);
+					$this->lag->insertarinterno($matricula,$pass,$uniquecode);
 				}else{
-				$uniquecode=$unique_code.substr(uniqid(),8,10);
-				$this->lag->insertar($nombre,$email,$pass,$uniquecode);
+				$uniquecode=$uniquecode.substr(uniqid(),8,10);
+				$this->lag->insertarinterno($nombre,$email,$pass,$uniquecode);
 
 			}
+		}else{
+
+			echo "ya estas registrado";
 		}
-			redirect("welcome/index");
+			//redirect("welcome/index");
 		}
 		public function unique(){
 			$fd=uniqid("ds");
