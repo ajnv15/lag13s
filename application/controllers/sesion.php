@@ -20,6 +20,19 @@ class sesion extends CI_Controller {
 
     }
 
+//se agrega para caso de usuarios externos
+    else if($tipo=="externo"){
+      $data=$this->lag->getUserdataExterno($usuario);
+      $idusuarios_externos=$data[0]->idusuarios_externos;
+      //echo $idusuarios_internos;
+      $monto=$this->lag->getmontoExterno($idusuarios_externos);
+      //echo $monto[0]->cantidad;
+
+
+    }
+
+
+
     $datos['monto']=$monto;
   $this->load->view('headers');
   $this->load->view('pagos',$datos);
