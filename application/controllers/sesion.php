@@ -5,8 +5,8 @@ class sesion extends CI_Controller {
 
   public function index() {
     $this->load->library('session');
-    $this->session->set_userdata('tipousuario','interno');
-    $this->session->set_userdata('usuario','100003');
+    $this->session->set_userdata('tipousuario','externo');
+    $this->session->set_userdata('usuario','snbfjujhf,kjfgmg');
     $tipo=$this->session->userdata('tipousuario');
     $usuario=$this->session->userdata('usuario');
     $this->load->model('lag');
@@ -33,12 +33,14 @@ class sesion extends CI_Controller {
 
 
 
-    $datos['monto']=$monto;
+  $datos['monto']=$monto[0]->cantidad;
+  $datos['concepto']=$data[0]->nombre;
+  $datos['unique_code']=$data[0]->unique_code;
   $this->load->view('headers');
   $this->load->view('pagos',$datos);
   $this->load->view('asientos');
   $this->load->view('qr');
-  $this->load->view('telegram');
+  $this->load->view('telegram',$datos);
   $this->load->view('footer');
   $this->load->library('session');
 

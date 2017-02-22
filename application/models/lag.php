@@ -32,6 +32,13 @@ class lag extends CI_Model {
 
     }
 
+    public function getUserdataExterno($email){
+      $query="select * from usuarios_externos where email='$email'";
+      $query2= $this->db->query($query);
+        return $query2->result();
+
+    }
+
     public function insertarinterno($matricula,$pass,$uniquecode){
           $query="insert into usuarios_internos (matricula,password,unique_code)
           values ('$matricula','$pass','$uniquecode')";
