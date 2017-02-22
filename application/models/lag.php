@@ -119,6 +119,18 @@ public function getmontoIterno($id)
   }
 }
 
+//se agrega función de getmonto para externos
+public function getmontoExterno($id)
+{
+  $query="select sum(monto) as cantidad from pagos_externos where idusuarios_externos='$id'";
+  $query2= $this->db->query($query);
+
+  if ($query2){
+    return $query2->result();
+
+
+  }
+}
 
 }
 
