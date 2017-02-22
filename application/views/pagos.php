@@ -46,7 +46,7 @@
                       <strong> Total de pagos</strong>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-1 col-xl-3">
-                    <strong>  $"variable"</strong>
+                    <strong>  $<?php echo $monto?></strong>
                     </div>
                 </div>
                   <br></br>
@@ -76,7 +76,7 @@
                   <h4> Concepto</h4>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 azu2">
-                <h4>  $"variable"</h4>
+                <h4>  <?php echo $usuario?></h4>
                 </div>
 
                 <div class="row">

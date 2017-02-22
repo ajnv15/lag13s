@@ -155,7 +155,7 @@
 
 
                             <div class="col-lg-5 col-sm-6 ">
-                              <h2 class="azul">$variable</h2>
+                              <h2 class="azul"><kbd><?php echo $codigoUnico;?></kbd></h2>
                               <div class="overlay">
                                 <div class="text">Después de enviar este codigo recibiras un mensaje de confirmación</div>
                             </div>
