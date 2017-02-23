@@ -154,12 +154,10 @@
                             <div class="container">
 
 
-                            <div class="col-lg-5 col-sm-6 ">
-<<<<<<< HEAD
-                              <h2 class="azul"<?echo $unique_code;?></h2>
-=======
-                              <h2 class="azul"><kbd><?php echo $codigoUnico;?></kbd></h2>
->>>>>>> dadbee958bf9189e950ff7c583b9243e60ca5678
+                            <div class="col-lg-4 col-sm-6 ">
+
+                              <h2 class="azul"><kbd><?php echo $unique_code;?></kbd></h2>
+
                               <div class="overlay">
                                 <div class="text">Después de enviar este codigo recibiras un mensaje de confirmación</div>
                             </div>

@@ -6,13 +6,14 @@ class sesion extends CI_Controller {
   public function index() {
     $this->load->library('session');
     $this->session->set_userdata('tipousuario','externo');
-    $this->session->set_userdata('usuario','snbfjujhf,kjfgmg');
+    $this->session->set_userdata('usuario','hhhe@ho.com');
     $tipo=$this->session->userdata('tipousuario');
     $usuario=$this->session->userdata('usuario');
     $this->load->model('lag');
     if($tipo=="interno"){
       $data=$this->lag->getUserdataInterno($usuario);
       $idusuarios_internos=$data[0]->idusuarios_internos;
+      $datos['concepto']=$data[0]->matricula;
       //echo $idusuarios_internos;
       $monto=$this->lag->getmontoIterno($idusuarios_internos);
       //echo $monto[0]->cantidad;
@@ -21,10 +22,12 @@ class sesion extends CI_Controller {
     }
 
 //se agrega para caso de usuarios externos
-    else if($tipo=="externo"){
+     if($tipo=="externo"){
       $data=$this->lag->getUserdataExterno($usuario);
       $idusuarios_externos=$data[0]->idusuarios_externos;
+      $datos['concepto']=$data[0]->email;
       //echo $idusuarios_internos;
+
       $monto=$this->lag->getmontoExterno($idusuarios_externos);
       //echo $monto[0]->cantidad;
 
@@ -33,8 +36,14 @@ class sesion extends CI_Controller {
 
 
 
+
   $datos['monto']=$monto[0]->cantidad;
-  $datos['concepto']=$data[0]->nombre;
+
+  if($datos['monto']==null){
+
+    $datos['monto']=0;
+  }
+
   $datos['unique_code']=$data[0]->unique_code;
   $this->load->view('headers');
   $this->load->view('pagos',$datos);

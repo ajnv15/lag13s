@@ -35,7 +35,7 @@ class lag extends CI_Model {
     public function getUserdataExterno($email){
       $query="select * from usuarios_externos where email='$email'";
       $query2= $this->db->query($query);
-        return $query2->result();
+      return $query2->result();
 
     }
 

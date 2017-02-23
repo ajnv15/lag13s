@@ -25,6 +25,7 @@ class botchat extends CI_Model {
       $query2= $this->db->query($query);
       return $query2->result();
       }
+      
   public function insertarChatid($chatid){
 
     $query="insert into bot_chats (chat_id, asociado) values (".$chatid.",FALSE)";
