@@ -25,7 +25,7 @@ class sesion extends CI_Controller {
      if($tipo=="externo"){
       $data=$this->lag->getUserdataExterno($usuario);
       $idusuarios_externos=$data[0]->idusuarios_externos;
-      $datos['concepto']=$data[0]->email;
+      $datos['concepto']=$data[0]->nombre;
       //echo $idusuarios_internos;
 
       $monto=$this->lag->getmontoExterno($idusuarios_externos);

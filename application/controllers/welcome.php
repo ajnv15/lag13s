@@ -76,27 +76,26 @@ public function iniciarSesion()
 	$interno=$this->lag->SesionInterno($usuario,$pass);
 	$externo=$this->lag->SesionExterno($usuario,$pass);
 
-	if(isset($interno)){
+	if($interno){
 		  $this->load->library("session");
 			$this->session->set_userdata('usuario',$interno[0]->matricula);
 			$this->session->set_userdata("tipousuario","interno");
 			//header("location:".base_url()."index.php/sesion/index");
+			echo "ingreso";
 
-			redirect(site_url("sesion/index"));
 	}
 	//inicio de sesion y redireccion a nuevo controlador
 	//hacer una funcion que seleccione user y pass de bd para usuarios internos
-	else if($externo){
-		$this->load->library("session");
-		$this->session->set_userdata('usuario',$externo->nombre);
-		$this->session->set_userdata("tipousuario","externo");
-		redirect("sesion/index");
+	 if($externo){
 
+		$this->load->library("session");
+		$this->session->set_userdata('usuario',$externo[0]->email);
+		$this->session->set_userdata("tipousuario","externo");
+		echo "ingreso";
 
 		}
-
-else if ($interno==false&&$externo==false) {
-	echo "nhy5tr";
+else if ($interno==false && $externo==false) {
+	echo "error";
 
 }
 

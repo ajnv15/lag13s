@@ -1,3 +1,9 @@
+<script>
+function myFunction() {
+    document.getElementById("myBtn").disabled = true;
+}
+</script>
+
 <div class="tab-pane active" >
 
   <div class="modal-content">
@@ -15,7 +21,7 @@
                 <label for="mensaje"></label>
                 <textarea  class="form-control" name="mensaje" rows="8" cols="80" id="mensaje" placeholder="Ingresa el mensaje que se enviara a todos los usuarios"></textarea>
                 <input type="text" class="form-control" name="code" value="" placeholder="ingresa el codigo para enviar mensajes">
-                <button class="btn btn-primary"> Enviar</button>
+                <button class="btn btn-primary" onclick="myFunction();"> Enviar</button>
               </div>
             </form>
 

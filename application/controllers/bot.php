@@ -24,6 +24,7 @@ class bot extends CI_Controller{
             $message=file_get_contents($url);
             }
       }
+      redirect("welcome/index");
     }
   public function receiveMessage(){
     $bootToken="372621238:AAEFrCbMNpEE2mwBk2t8ClfHWYWPHWNjnvk";

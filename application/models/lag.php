@@ -103,7 +103,7 @@ public function SesionExterno($usuario,$pass)
 {
   $query="select * from  usuarios_externos where email='$usuario' and password='$pass'";
   $query2= $this->db->query($query);
-
+  
   if ($query2->num_rows()>0) {
     return $query2->result();
 
