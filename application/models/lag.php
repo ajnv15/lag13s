@@ -76,12 +76,12 @@ public function insertarexterno($nombre,$email,$pass,$code){
   $query2= $this->db->query($query);
 
   if ($query2) {
-    echo "exito";
+    return "Se ha registrado con exito";
 
   }
-else {
-  echo "fallo";
-}
+  else {
+  return "ha ocurrido un error, por favor intenta de nuevo";
+  }
 }
 
   public function SesionInterno($usuario,$pass)

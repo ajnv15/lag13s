@@ -5,8 +5,8 @@ class sesion extends CI_Controller {
 
   public function index() {
     $this->load->library('session');
-    $this->session->set_userdata('tipousuario','externo');
-    $this->session->set_userdata('usuario','hhhe@ho.com');
+    // $this->session->set_userdata('tipousuario','externo');
+    // $this->session->set_userdata('usuario','hhhe@ho.com');
     $tipo=$this->session->userdata('tipousuario');
     $usuario=$this->session->userdata('usuario');
     $this->load->model('lag');
@@ -109,6 +109,19 @@ class sesion extends CI_Controller {
       echo "Recuerda que tu referencia bancaria es 091ge123 y tienes que pagar en Bancomer";
 
   }
+
+  public function testlogin(){//copiar a welcome
+  $this->load->view("ajax");
+  }
+
+  public function postlogintest()
+  {
+    $usuario=$this->input->post("usuario");
+    $password=$this->input->post("password");
+
+echo $usuario." test entra php ".$password;
+  }
+
 
 
 }
