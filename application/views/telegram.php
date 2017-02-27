@@ -123,7 +123,7 @@
             <div class="col-lg-4">
               <img class="image-responsive" src="<?php echo base_url()."/assets/images/bot.jpg";?>" alt="">
               <div class="overlay">
-                <div class="text">Al hacer click sobre nuestro bot se abrirá la ventana de chat</div>
+                <div class="text">Inicia un chat</div>
             </div>
             </div>
             <div class="col-lg-3">
@@ -141,7 +141,7 @@
             <div class="col-lg-4">
               <img class="image-responsive" src="<?php echo base_url()."/assets/images/arranca.jpg";?>" alt="">
               <div class="overlay">
-                <div class="text">Hello World</div>
+                <div class="text">Da click en iniciar</div>
             </div>
             </div>
             <div class="col-lg-3">
@@ -159,7 +159,7 @@
                               <h2 class="azul"><kbd><?php echo $unique_code;?></kbd></h2>
 
                               <div class="overlay">
-                                <div class="text">Después de enviar este codigo recibiras un mensaje de confirmación</div>
+                                <div class="text">Envía este código</div>
                             </div>
                             </div>
                             <div class="col-lg-3 ">

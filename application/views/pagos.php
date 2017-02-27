@@ -102,7 +102,11 @@
 
 
                 </div>
+                <?php if($this->session->userdata('tipousuario')=="interno"){
+                  ?>
 
+
+                <div>
                 <div class="row">
                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-5 col-xl-8 col-lg-offset-2
                   col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
@@ -142,6 +146,44 @@
                   <h4> $650.00</h4>
                   </div>
                 </div>
+              </div>
+            <?php } ?>
+            <?php if($this->session->userdata('tipousuario')=="externo"){
+              ?>
+
+
+            <div>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-5 col-xl-8 col-lg-offset-2
+              col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+                <h4> Fechas de Pago</h4>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 azu2">
+              <h4>  Monto a Pagar</h4>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-5 col-xl-8 col-lg-offset-2
+              col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+                <h4> Pago por 3 días </h4>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 azu2">
+              <h4> $650.00</h4>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-5 col-xl-8 col-lg-offset-2
+              col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+                <h4> Pago por conferencia</h4>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 azu2">
+              <h4> $250.00</h4>
+              </div>
+            </div>
+          </div>
+          <?php } ?>
 
             </div>
           </div>

@@ -6,6 +6,7 @@
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://use.fontawesome.com/42fc8e7dc1.js"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -35,12 +36,15 @@ body{
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#pagos" data-toggle="tab">Pagos</a></li>
+        <li><a href="#pagos" data-toggle="tab"><i class="fa fa-money fa-2x" aria-hidden="true"></i>  Pagos</a></li>
         <!--<li><a href="#asientos" data-toggle="tab">Asientos <span class="sr-only">(current)</span></a></li>-->
-        <li><a href="#qr" data-toggle="tab">Código QR</a></li>
-        <li><a href="#telegram" data-toggle="tab">Telegram</a></li>
-      </ul>
+        <li><a href="#qr" data-toggle="tab"> <i class="fa fa-qrcode fa-2x" aria-hidden="true"></i>  Código QR</a></li>
+        <li><a href="#telegram" data-toggle="tab"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i>  Telegram</a></li>
 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a href="<?php echo site_url()."/sesion/cerrarSesion";?>" ><i class="fa fa-power-off fa-2x" aria-hidden="true"></i>  Cerrar sesión</a></li>
+      </ul>
       <!--<ul class="nav navbar-nav navbar-right">
         <li><a href="#">Cerrar Sesión</a></li>
       </ul>

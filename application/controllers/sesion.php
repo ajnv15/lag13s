@@ -122,6 +122,12 @@ class sesion extends CI_Controller {
 echo $usuario." test entra php ".$password;
   }
 
+public function cerrarSesion(){
 
+  $this->load->library("session");
+  $this->session->sess_destroy();
+  redirect("welcome/index");
+
+}
 
 }
