@@ -139,7 +139,7 @@
 
 
             <div class="col-lg-4">
-              <img class="image-responsive" src="<?php echo base_url()."/assets/images/ini.jpg";?>" alt="">
+              <img class="image-responsive" src="<?php echo base_url()."/assets/images/arranca.jpg";?>" alt="">
               <div class="overlay">
                 <div class="text">Hello World</div>
             </div>
