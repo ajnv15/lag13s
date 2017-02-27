@@ -98,18 +98,46 @@ else if ($interno==false && $externo==false) {
 	echo "error";
 
 }
-
-
-
-
-
-
 }
 
-public function registros(){
-			$this->load->view('registroexterno');
 
 
+		public function EnviarEmail($email,$nombre)
+		{
+			$htmlContent = file_get_contents(base_url()."assets/htm/email_template.html");
+
+			$this->load->library('mailer');
+			$mail = new PHPMailer;
+			//$mail->IsSMTP();
+			$mail->SMTPAuth = false;
+			$mail->SMTPDebug = 2;
+			$mail->Host = 'mail.semana13.com.mx';
+			$mail->Port = 465;
+			$mail->Username = 'inscripciones@semana13.com.mx';
+			$mail->Password = 'semanaLAG13';
+			$mail->SMTPSecure = 'tsl';
+			$mail->From = "inscripcion@semana13.com.mx";
+			$mail->FromName = "inscripcion";
+			$mail->Priority = 1;
+			$mail->AddCustomHeader("X-MSMail-Priority: High");
+			$mail->WordWrap = 50;
+			$mail->addAddress("aj_nv@hotmail.com", "Arturo");
+			$mail->isHTML(true);
+			$mail->Subject = "Subject Text";
+			$mail->Body = $htmlContent;
+			$mail->AltBody = "This is the plain text version of the email content";
+			if(!$mail->send())
+			{
+			    //echo "Mailer Error: " . $mail->ErrorInfo;
+			}
+			else
+			{
+			    echo "Message has been sent successfully";
+			}
+			// $htmlContent = file_get_contents(base_url()."assets/htm/email_template.html");
+			//
+			// $headers = "Content-type:text/html;charset=UTF-8" . "\r\n";
+			// mail("aj_nv@hotmail.com","inscripcion exitosa",$htmlContent,$headers);
 		}
 
 
