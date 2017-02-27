@@ -75,6 +75,24 @@
               <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-5 col-xl-8 col-lg-offset-2
                 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+                <h4 >Clave Interbancario </h4>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xl-6">
+                <h4 class="azul">012700004552369839</h4>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-5 col-xl-8 col-lg-offset-2
+              col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+              <h4 >Número de tarjeta</h4>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xl-6">
+              <h4 class="azul">4152313275159072</h4>
+              </div>
+          </div>
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-5 col-xl-8 col-lg-offset-2
+                col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
                   <h4> Concepto</h4>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 azu2">
@@ -88,12 +106,43 @@
                 <div class="row">
                   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-5 col-xl-8 col-lg-offset-2
                   col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
-                    <h4> Fechas de pago</h4>
+                    <h4> Fechas de Pago</h4>
                   </div>
                   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 azu2">
-                  <h4>  20 de Febrero al 06 de Marzo</h4>
+                  <h4>  Monto a Pagar</h4>
                   </div>
                 </div>
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-5 col-xl-8 col-lg-offset-2
+                  col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+                    <h4> 20 de Febrero al 17 de Marzo</h4>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 azu2">
+                  <h4> $500.00</h4>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-5 col-xl-8 col-lg-offset-2
+                  col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+                    <h4> 18 de Marzo al 17 de Abril</h4>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 azu2">
+                  <h4> $580.00</h4>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xl-5 col-xl-8 col-lg-offset-2
+                  col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+                    <h4> 18 de Abril al 30 de Abril</h4>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 azu2">
+                  <h4> $650.00</h4>
+                  </div>
+                </div>
+
             </div>
           </div>
           </div>
