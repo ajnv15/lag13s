@@ -62,9 +62,9 @@ $(document).ready(function(){
 
 
 
-    $('#login_btn_l').click(function(){
-      var user=$("#usuario_l").val();
-      var pass=$("#password_l").val();
+    $('#u2406').click(function(){
+      var user=$("#widgetu2400_input").val();
+      var pass=$("#widgetu2408_input").val();
 
       $.ajax({
         method: "post",

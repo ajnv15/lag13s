@@ -34,20 +34,20 @@ $form = array(
 		'custom_U748' => array(
 			'order' => 1,
 			'type' => 'string',
-			'label' => 'TU NOMBRE',
+			'label' => 'registro interno',
 			'required' => true,
 			'errors' => array(
-				'required' => 'El campo \'TU NOMBRE\' es obligatorio.'
+				'required' => 'El campo \'registro interno\' es obligatorio.'
 			)
 		),
 		'Email' => array(
 			'order' => 2,
 			'type' => 'email',
-			'label' => 'Correo electrónico',
+			'label' => 'PASSWORD',
 			'required' => true,
 			'errors' => array(
-				'required' => 'El campo \'Correo electrónico\' es obligatorio.',
-				'format' => 'El campo \'Correo electrónico\' contiene un correo electrónico no válido.'
+				'required' => 'El campo \'PASSWORD\' es obligatorio.',
+				'format' => 'El campo \'PASSWORD\' contiene un correo electrónico no válido.'
 			)
 		),
 		'custom_U759' => array(
