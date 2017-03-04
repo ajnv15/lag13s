@@ -4,7 +4,55 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class sesion extends CI_Controller {
 
   public function index() {
-    //esta vacia la funcion
+    $this->load->library('session');
+    // $this->session->set_userdata('tipousuario','externo');
+    // $this->session->set_userdata('usuario','hhhe@ho.com');
+    $tipo=$this->session->userdata('tipousuario');
+    $usuario=$this->session->userdata('usuario');
+    $this->load->model('lag');
+    if($tipo=="interno"){
+      $data=$this->lag->getUserdataInterno($usuario);
+      $idusuarios_internos=$data[0]->idusuarios_internos;
+      $datos['concepto']=$data[0]->matricula;
+      //echo $idusuarios_internos;
+      $monto=$this->lag->getmontoIterno($idusuarios_internos);
+      //echo $monto[0]->cantidad;
+
+
+    }
+
+//se agrega para caso de usuarios externos
+     if($tipo=="externo"){
+      $data=$this->lag->getUserdataExterno($usuario);
+      $idusuarios_externos=$data[0]->idusuarios_externos;
+      $datos['concepto']=$data[0]->nombre;
+      //echo $idusuarios_internos;
+
+      $monto=$this->lag->getmontoExterno($idusuarios_externos);
+      //echo $monto[0]->cantidad;
+
+
+    }
+
+
+
+
+  $datos['monto']=$monto[0]->cantidad;
+
+  if($datos['monto']==null){
+
+    $datos['monto']=0;
+  }
+
+  $datos['unique_code']=$data[0]->unique_code;
+  $this->load->view('headers');
+  $this->load->view('pagos',$datos);
+  $this->load->view('asientos');
+  $this->load->view('qr');
+  $this->load->view('telegram',$datos);
+  $this->load->view('footer');
+  $this->load->library('session');
+
   }
 
   public function generarCodigo()
@@ -62,5 +110,24 @@ class sesion extends CI_Controller {
 
   }
 
+  public function testlogin(){//copiar a welcome
+  $this->load->view("ajax");
+  }
+
+  public function postlogintest()
+  {
+    $usuario=$this->input->post("usuario");
+    $password=$this->input->post("password");
+
+echo $usuario." test entra php ".$password;
+  }
+
+public function cerrarSesion(){
+
+  $this->load->library("session");
+  $this->session->sess_destroy();
+  redirect("welcome/index");
+
+}
 
 }
