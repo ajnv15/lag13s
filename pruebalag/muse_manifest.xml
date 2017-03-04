@@ -1,0 +1,107 @@
+<manifest alg="2" build="2017.0.1.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="politecnicafinal.com" resolutions="1x" timestamp="1488351257264">
+  <folder name="css">
+    <file name="site_global.css" crc="443350757"/>
+    <file name="index.css" crc="179389031" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index"/>
+    <file name="museutils.js" crc="4148063285" ref="index"/>
+    <file name="whatinput.js" crc="86476730" ref="index"/>
+    <file name="museconfig.js" crc="4179431180" ref="index"/>
+    <file name="webpro.js" crc="3986320349" ref="index"/>
+    <file name="musewpslideshow.js" crc="405464237" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="305414130" ref="index"/>
+    <file name="touchswipe.js" crc="221459597" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4001026563" ref="index"/>
+    <file name="form_check.php" crc="303648844" ref="index"/>
+    <file name="form_throttle.php" crc="236764551" ref="index"/>
+    <file name="form_process.php" crc="4272079531" ref="index"/>
+    <file name="form-u2395.php" crc="366248250" ref="index"/>
+    <file name="form-u746.php" crc="120577152" ref="index"/>
+    <file name="form-u2185.php" crc="108262007" ref="index"/>
+    <file name="jquery.watch.js" crc="437028206" ref="index"/>
+    <file name="require.js" crc="4159430777" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="fondo pagina.jpg" crc="3796698041" seo="true" ref="index"/>
+    <file name="barra menu.png" crc="284180041" seo="true" ref="index"/>
+    <file name="u224-4.png" crc="425192248" ref="index"/>
+    <file name="u237-4.png" crc="229243265" ref="index"/>
+    <file name="u240-4.png" crc="271736722" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="iconos conocenos.png" crc="52953513" seo="true" ref="index"/>
+    <file name="u211-4.png" crc="3981719045" ref="index"/>
+    <file name="u215-4.png" crc="400338803" ref="index"/>
+    <file name="u221-12.png" crc="4289313011" ref="index"/>
+    <file name="fondo ponentes.jpg" crc="4159135618" seo="true" ref="index"/>
+    <file name="fondo patrocinadores.jpg" crc="4126248490" seo="true" ref="index"/>
+    <file name="u155-4-a.png" crc="331381876" ref="index"/>
+    <file name="u165_states.png" crc="3785828546" ref="index"/>
+    <file name="u165_states-r.png" crc="4235072383" ref="index"/>
+    <file name="u165_states-a.png" crc="243098867" ref="index"/>
+    <file name="u170_states.png" crc="178728309" ref="index"/>
+    <file name="u170_states-r.png" crc="510439595" ref="index"/>
+    <file name="u170_states-a.png" crc="3851528810" ref="index"/>
+    <file name="u173_states.png" crc="4005538833" ref="index"/>
+    <file name="u173_states-r.png" crc="392325594" ref="index"/>
+    <file name="u173_states-a.png" crc="4247416607" ref="index"/>
+    <file name="u176_states.png" crc="4080365144" ref="index"/>
+    <file name="u176_states-r.png" crc="232389557" ref="index"/>
+    <file name="u176_states-a.png" crc="4213490312" ref="index"/>
+    <file name="u179_states.png" crc="366628047" ref="index"/>
+    <file name="u179_states-r.png" crc="4187497851" ref="index"/>
+    <file name="u179_states-a.png" crc="230084285" ref="index"/>
+    <file name="ponentes-u495.png" crc="3866362099" ref="index"/>
+    <file name="programa (1).jpg" crc="54899802" seo="true" ref="index"/>
+    <file name="u2082-12.png" crc="456031646" ref="index"/>
+    <file name="u2085-9.png" crc="4069477664" ref="index"/>
+    <file name="u1710-10.png" crc="45442382" ref="index"/>
+    <file name="u2050-9.png" crc="4197863584" ref="index"/>
+    <file name="u2062-13.png" crc="350538233" ref="index"/>
+    <file name="u2499-16.png" crc="4047001016" ref="index"/>
+    <file name="u1644-15.png" crc="336862232" ref="index"/>
+    <file name="16910930_10212528847446910_907668818_o-u2088.png" crc="3818873844" ref="index"/>
+    <file name="13 central-u939.png" crc="3809676210" ref="index"/>
+    <file name="titulo conferencia.png" crc="3978156924" ref="index"/>
+    <file name="u2076-4.png" crc="4195895121" ref="index"/>
+    <file name="u2446.png" crc="456310885" ref="index"/>
+    <file name="u2446-a.png" crc="456310885" ref="index"/>
+    <file name="u2402.png" crc="3920528545" ref="index"/>
+    <file name="u2402-ferr.png" crc="3930622606" ref="index"/>
+    <file name="u2409.png" crc="3791078635" ref="index"/>
+    <file name="u2409-ferr.png" crc="4034257650" ref="index"/>
+    <file name="u2406.png" crc="4097630128" ref="index"/>
+    <file name="u2406-r.png" crc="4207799883" ref="index"/>
+    <file name="u2406-m.png" crc="3844476074" ref="index"/>
+    <file name="u2406-fs.png" crc="4079048744" ref="index"/>
+    <file name="u455-4.png" crc="223936177" ref="index"/>
+    <file name="bob hatfield.png" crc="4007523445" seo="true" ref="index"/>
+    <file name="u1648-4.png" crc="3923260383" ref="index"/>
+    <file name="u1656-4.png" crc="399510593" ref="index"/>
+    <file name="u2079-4.png" crc="13786545" ref="index"/>
+    <file name="u1669-4.png" crc="369133229" ref="index"/>
+    <file name="u1747-4.png" crc="3892462991" ref="index"/>
+    <file name="u1675-4.png" crc="4211071727" ref="index"/>
+    <file name="u1724-4.png" crc="4062662830" ref="index"/>
+    <file name="u704-4.png" crc="237065417" ref="index"/>
+    <file name="u719-4.png" crc="4238419597" ref="index"/>
+    <file name="u751.png" crc="3807779363" ref="index"/>
+    <file name="u751-ferr.png" crc="3826454915" ref="index"/>
+    <file name="u752-fss.png" crc="372073270" ref="index"/>
+    <file name="u747.png" crc="3860486043" ref="index"/>
+    <file name="u747-r.png" crc="4149332376" ref="index"/>
+    <file name="u747-m.png" crc="4131967109" ref="index"/>
+    <file name="u747-fs.png" crc="3919529923" ref="index"/>
+    <file name="16833444_10212529333659065_26340105_o.png" crc="49223469" seo="true" ref="index"/>
+    <file name="u2204.png" crc="4274181011" ref="index"/>
+    <file name="u2204-ferr.png" crc="329939442" ref="index"/>
+    <file name="u2196-fss.png" crc="372073270" ref="index"/>
+    <file name="u2205.png" crc="7973031" ref="index"/>
+    <file name="u2205-r.png" crc="483431590" ref="index"/>
+    <file name="u2205-m.png" crc="4221646616" ref="index"/>
+    <file name="u2205-fs.png" crc="449769523" ref="index"/>
+    <file name="u2146-8.png" crc="68069873" ref="index"/>
+    <file name="16832741_10212529346099376_301287500_o.png" crc="508663022" seo="true" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4161882964" seo="true" mt="1488351248461" redirect="true"/>
+</manifest>
